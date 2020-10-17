@@ -10,5 +10,6 @@ public class ParkingStall{
   public void setOccpied(boolean newStatus){
     occupied = newStatus;
   }
+ 
   
 }
