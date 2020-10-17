@@ -14,32 +14,18 @@ public class ParkingLot{
     rect(30, 15, 740, 370);
     fill(125);
     rect(35, 20, 730, 360);
-    
+    drawParkingSections();
     
 }
   
   void drawParkingSections(){
    
     for(int i = 0; i < 6; i++){
-      sections.add(new ParkingLotSection());
+      sections.add(new ParkingLotSection(i*10 + 10, i*10+10, 20*5, 20*2));
     }
-    
-  }
-  
-}
-
-
-public class ParkingStall{
-  private boolean occupied;
-  public ParkingStall(boolean isOccupied){
-    occupied = isOccupied;
-  }
-  
-  public boolean getOccupied(){
-    return occupied;
-  }
-  public void setOccpied(boolean newStatus){
-    occupied = newStatus;
+    for(int i = 0; i < 6; i++){
+      sections.get(i).draw_section();
+    }
   }
   
 }
