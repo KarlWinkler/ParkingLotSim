@@ -1,6 +1,4 @@
 
-<<<<<<< HEAD
-=======
 class ParkingLotSection { //10 (5x2) Parking Stalls in each Section
   ParkingStall[] Stall_list;
   int x;
@@ -21,7 +19,7 @@ class ParkingLotSection { //10 (5x2) Parking Stalls in each Section
   }
 }
 
->>>>>>> df385cfd7a445dc69b12be6bd405b9b160cac7a7
+
 void setup() {
 
   size(800,400);
