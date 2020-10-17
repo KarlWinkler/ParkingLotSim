@@ -8,7 +8,6 @@ class ParkingLotSection { //10 (5x2) Parking Stalls in each Section
 void setup() {
 
   size(800,400);
-  String test = "Test";
 
 }
 

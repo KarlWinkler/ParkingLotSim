@@ -1,4 +1,4 @@
-class ParkingLot{
+public class ParkingLot{
   
   ArrayList<ParkingLotSection> sections;
   
