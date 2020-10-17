@@ -11,7 +11,10 @@ public class ParkingStall{
     occupied = newStatus;
   }
   public void drawStall(int posx, int posy){
-    rect(posx,posy, 20,20);
+    fill(0);
+    rect(posx-5,posy-5, 45,25);
+    fill(100);
+    rect(posx,posy, 40,20);
   }
   
 }
