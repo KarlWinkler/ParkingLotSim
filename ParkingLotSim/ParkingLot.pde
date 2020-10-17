@@ -32,6 +32,7 @@ public class ParkingLot{
         sections.get(i+j).draw_section();
       }
     }
+
   }
   
 }
