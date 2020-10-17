@@ -1,4 +1,4 @@
-class ParkingLot{
+public class ParkingLot{
   
   ArrayList<ParkingLotSection> sections;
   
@@ -24,6 +24,22 @@ class ParkingLot{
       sections.add(new ParkingLotSection());
     }
     
+  }
+  
+}
+
+
+public class ParkingStall{
+  private boolean occupied;
+  public ParkingStall(boolean isOccupied){
+    occupied = isOccupied;
+  }
+  
+  public boolean getOccupied(){
+    return occupied;
+  }
+  public void setOccpied(boolean newStatus){
+    occupied = newStatus;
   }
   
 }
