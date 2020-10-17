@@ -1,11 +1,12 @@
 class ParkingLotSection { //10 (5x2) Parking Stalls in each Section
-  ParkingStall[] Stall_list;
+  ParkingStall[] stall_list;
   int x;
   int y;
   int section_width;
   int section_height;
   
   ParkingLotSection(int tx, int ty, int w, int h){
+    stall_list = new ParkingStall[10];
     x=tx;
     y=ty;
     section_width = w;
@@ -13,14 +14,17 @@ class ParkingLotSection { //10 (5x2) Parking Stalls in each Section
   }
   
   void draw_section(){
-    fill(144,238,144);
-    rect(x, y, section_width, section_height);
-    noFill();
-    stroke(255, 255, 255);
-    for (int i = 0; i <= 5; i++) {
-      for (int j = 0; j <= 2; j++) {
-        rect(i * section_width, j * section_height, section_width/5, section_height/2);
+    
+    for(int i = 0; i < 10; i++){
+      stall_list[i] = new ParkingStall(false);      
+    }
+    
+    for(int i = 0; i < 2; i++){
+      stall_list[i].drawStall(i*20, 0);
+      for(int j = 0; j < 5; j++){
+        stall_list[i+j].drawStall((i+j)*20, section_width/2);
       }
+      i=0;
     }
   }
 }
