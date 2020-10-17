@@ -26,6 +26,7 @@ public class ParkingLot{
     for(int i = 0; i < 6; i++){
       sections.get(i).draw_section();
     }
+
   }
   
 }
