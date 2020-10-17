@@ -1,7 +1,9 @@
 class ParkingLot{
- 
+  
+  ArrayList<ParkingLotSection> sections;
+  
   ParkingLot(){
-    ArrayList<ParkingLotSection> sections = new ArrayList<ParkingLotSection>();
+    sections = new ArrayList<ParkingLotSection>();
     
   }
   
@@ -19,7 +21,7 @@ class ParkingLot{
   void drawParkingSections(){
    
     for(int i = 0; i < 6; i++){
-      sections.add(new ParkingLotSections());
+      sections.add(new ParkingLotSection());
     }
     
   }
